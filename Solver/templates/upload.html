@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<body>
+   <div class="header-bar" >
+    <h2 id="heading">Math Solver</h2>
+    </div>
+    <div style="text-align: center;" class="card-body" >
+    
+    <form enctype="multipart/form-data" class="ocrForm" action="/process_image" method="post"> 
+
+    
+        {% csrf_token %}
+        {{ form.as_p }}
+        
+        
+        <button type="submit" class="button">Solve</button>
+    </form>
+
+        
+    </div>
+</div>
+</body>
+
+
+{% endblock content %}

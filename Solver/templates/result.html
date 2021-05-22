@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+
+    <head>
+        <title>Result</title>
+        <script type="application/javascript" src="{% static 'js/voicereco.js' %}"></script>
+    </head>
+    
+    <body onload="start()">
+           <div class="header-bar" >
+             <h2 id="heading">Result</h2>
+            </div>
+
+            <div style="text-align: center;" class="card-body" >
+<<<<<<< HEAD
+        <form id="done" action="{% url 'upload' %}">
+            <p>{{sum_result}}</p>
+
+            <div id="result"></div>
+        </form>
+        </div>
+=======
+                <form id="done" action="{% url 'upload' %}">
+                     <p>{{sum_result}}</p>
+
+                    <div id="result" style="changeIt.style.visibility = 'hidden';"></div>
+                </form>
+            </div>
+>>>>>>> 020ddc0 (v1.3)
+
+
+    </body>
+
+{% endblock content %}

@@ -1,0 +1,1 @@
+web: gunicorn MathSolver.wsgi --log-file -
