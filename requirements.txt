@@ -53,7 +53,7 @@ sympy==1.8
 tifffile==2021.4.8
 timm==0.4.5
 tokenizers==0.10.2
-pytorch==1.8.1
+pytorch
 torchtext
 torchvision
 tqdm==4.60.0
